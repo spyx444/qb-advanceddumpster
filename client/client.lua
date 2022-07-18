@@ -84,10 +84,10 @@ RegisterNetEvent("qb-dumpster:client:dumpsterdive", function()
                 elseif i == #searched and not dumpsterFound and not currentlySearching then
                     currentlySearching = true
                     QBCore.Functions.Progressbar("dumpsters", "Searching Dumpster", 4500, false, false, {
-                        disableMovement = false,
-                        disableCarMovement = false,
+                        disableMovement = true,
+                        disableCarMovement = true,
                         disableMouse = false,
-                        disableCombat = false,
+                        disableCombat = true,
                     }, {
                         animDict = "amb@prop_human_bum_bin@base",
                         anim = "base",
